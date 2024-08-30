@@ -1,0 +1,111 @@
+.all-post-container {
+    margin: 30px auto;
+    width: 100%;
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .post-item {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(158, 158, 158);
+    box-sizing: border-box; 
+  }
+  
+  .post-item .all-user-post {
+    width: 100%;
+    height:auto;
+    border-radius: 10px;
+    object-fit: cover; 
+}
+
+.post-item p {
+    font-size: 15px;
+    font-weight: 100;
+    word-wrap: break-word; 
+    overflow-wrap: break-word;
+    word-break: break-all; 
+    box-sizing: border-box; 
+  }
+
+.post-user-item
+{
+  display: flex;
+  align-items: center;
+  width: 100%;
+  gap: 20px;
+  height: fit-content;
+}
+.post-user-item img{
+  width: 50px;  
+  border-radius: 50%;
+  height: 50px;
+}
+
+.post-user-item p
+{
+  font-size: 20px;
+  font-weight: 500;
+}
+.likes-share-post
+{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.likes-share-post .bx.bx-heart{
+  font-size: 25px;
+}
+
+
+.likes-share-post .bx.bxs-heart
+{
+  font-size: 25px;
+  color: rgb(182, 13, 13);
+}
+
+.likes-share-post .bx.bx-link-alt{
+  font-size: 25px;
+  background-color: white;
+}
+.likes-share-post .bx.bx-link-alt:hover
+{
+  color: blue;
+}
+
+.data-link-container
+{
+  width: 300px;
+  background-color: white;
+  height: fit-content;
+  border-radius: 10px;
+  animation: animateCopiedLink 5s ease-in forwards;
+  transition: animation 1s ease-in-out;
+}
+.data-link-container img
+{
+  width: 100%;
+  border-radius: 10px;
+}
+.data-link-containe p{
+  color: white;
+  padding: 0px;
+}
+.bx.bx-copy-alt
+{
+  color: rgb(3, 3, 109);
+}
+
+@media screen and (max-width:600px) {
+  .all-post-.all-post-container
+  {
+    padding: 0px;
+    gap: 5px;
+  }
+}

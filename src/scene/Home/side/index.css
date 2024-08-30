@@ -1,0 +1,83 @@
+body{
+    margin: 10px;
+    padding: 10px;
+}
+
+.side-bar
+{
+    width: 15%;
+    position: static;
+    padding: 20px;
+    height: 90vh;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 3px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#product-name
+{
+    font-size: 20px;
+    color: rgb(255, 123, 0);
+    font-weight: bold;
+}
+
+.side-bar-container
+{
+    width: 100%;
+}
+.slide-bar-list
+{
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column; 
+    width: 100%;
+    gap: 10px;
+}
+
+.slide-bar-list li
+{
+    cursor: pointer;
+   text-align: center; 
+    list-style-type: none; 
+    width: 100%;  
+    padding: 10px 0px;
+}
+
+#logout
+{
+    width: 100%;
+    text-align: center;
+    border-radius: 10px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+#logout:hover
+{
+    background-color: rgb(255, 244, 228);
+}
+
+.slide-bar-list .active
+{
+    background-color: rgb(255, 244, 228);
+    border-radius: 10px;
+}
+
+.slide-bar-list li:hover
+{
+    background-color: rgb(255, 244, 228);
+    border-radius: 10px;
+}
+
+
+@media screen and (max-width:500px) {
+    .side-bar
+    {
+        width: 100%;
+        display: none;
+    }
+}

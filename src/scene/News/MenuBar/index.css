@@ -1,0 +1,107 @@
+.menubar
+{
+    display: none;
+    background-color: rgb(1, 1, 56);
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    color: white;
+    margin: 10px;
+    width: fit-content;
+    border: 1px solid white;
+    border-radius:50%;
+    
+}
+
+.menubar i{
+    padding: 10px;
+    font-size: 12px;
+    z-index: 1000;
+}
+
+@media screen and (max-width:500px) {
+    .menubar
+    {
+        display: block;
+    }
+    .mobile-user-menu
+    {
+        position: fixed;
+        z-index: 200;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        background-image: linear-gradient(to right bottom,white,rgb(6, 0, 74));
+        opacity: 0.9;
+        width: 90%;
+        height: 95vh;
+        display: flex;
+        color: black;
+        border-radius: 10px;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        border-bottom-right-radius: 70px;
+        box-shadow: 0px 0px 10px black;
+        animation:animationMenu 1.5s ease forwards;
+        gap:10px;
+    }
+
+    .mobile-user-menu li
+    {
+        width: 80%;
+        padding: 10px;
+        text-align: center;
+        border-radius: 10px;
+        list-style-type:none ;
+        opacity: 1;
+        animation:animationDatas 2s ease-in-out forwards;
+    }
+    .mobile-user-menu li:hover{
+        background-color: aliceblue;
+    }
+
+    @keyframes animationDatas {
+        0%
+        {
+            opacity: 0;
+        }   
+        100%
+        {
+            opacity: 1;
+        }
+    }
+
+    @keyframes animationMenu {
+        0%
+        {
+            /* width: 0%; */
+            height: 0vh;
+        }
+        100%
+        {
+            /* width: 90%; */
+            height: 94vh;
+        }
+    }
+
+    .user-profile-menus
+    {
+        height: fit-content;
+        width: 90%;
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 10px;
+        animation:animationDatas 2.2s ease-in-out forwards;
+    }
+
+    .user-profile-menus img {
+        width: 60%;
+        box-shadow: 0px 0px 10px white;
+        border-radius: 50%;
+        /* animation:animationDatas 3s ease-in-out forwards; */
+    };
+}
